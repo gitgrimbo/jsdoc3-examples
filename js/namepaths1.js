@@ -1,7 +1,7 @@
 //http://usejsdoc.org/about-namepaths.html
 //Use a documentation tag to describe your code.
 /** @constructor */
-Person1 = function() {
+namepath1Person = function() {
     this.say = function() {
         return "I'm an instance.";
     }
@@ -10,11 +10,11 @@ Person1 = function() {
         return "I'm inner.";
     }
 }
-Person1.say = function() {
+namepath1Person.say = function() {
     return "I'm static.";
 }
 
-var p = new Person1();
+var p = new namepath1Person();
 p.say();      // I'm an instance.
-Person1.say(); // I'm static.
+namepath1Person.say(); // I'm static.
 // there is no way to directly access the inner function from here

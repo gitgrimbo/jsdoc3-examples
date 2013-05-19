@@ -1,7 +1,7 @@
 //http://usejsdoc.org/about-namepaths.html
 //Use a documentation tag to describe your code.
 /** @constructor */
-Person2 = function() {
+namepath2Person = function() {
     /** @constructor */
     this.Idea = function() {
         this.consider = function(){
@@ -10,6 +10,6 @@ Person2 = function() {
     }
 }
 
-var p = new Person2();
+var p = new namepath2Person();
 var i = new p.Idea();
 i.consider();
