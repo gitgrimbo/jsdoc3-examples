@@ -1,0 +1,1 @@
+A collection of sample JSDoc from the [usejsdoc.org](http://usejsdoc.org) website.

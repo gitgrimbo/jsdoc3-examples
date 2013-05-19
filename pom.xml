@@ -1,0 +1,32 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>temp</groupId>
+    <artifactId>temp</artifactId>
+    <version>0</version>
+    <build>
+        <plugins>
+            <!--
+            https://github.com/phasebash/jsdoc3-maven-plugin
+            -->
+            <plugin>
+                <groupId>com.github.phasebash</groupId>
+                <artifactId>jsdoc3-maven-plugin</artifactId>
+                <version>1.0.3-SNAPSHOT</version>
+                <configuration>
+                    <recursive>true</recursive>
+                    <directoryRoots>
+                        <directoryRoot>${basedir}/js</directoryRoot>
+                    </directoryRoots>
+                    <configFile>${basedir}/conf.json</configFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jsdoc3</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
